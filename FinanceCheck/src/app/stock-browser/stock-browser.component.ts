@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { APIServiceService, StockDetails } from '../apiservice.service';
+import { ComponentUpdateService } from '../component-update.service';
 
 @Component({
   selector: 'app-stock-browser',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stock-browser.component.css']
 })
 export class StockBrowserComponent implements OnInit {
-
-  constructor() { }
+  searchstring: string = "";
+  stockDetails: StockDetails;
+  constructor(private updateService: ComponentUpdateService) { }
 
   ngOnInit() {
   }
-
+  search() {
+    this.updateService.updateListFn(this.searchstring)
+  };
 }

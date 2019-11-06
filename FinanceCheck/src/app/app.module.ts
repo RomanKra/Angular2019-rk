@@ -14,6 +14,9 @@ import { StockBrowserComponent } from './stock-browser/stock-browser.component';
 import { HeaderComponent } from './header/header.component';
 import { StockListEntryComponent } from './stock-list-entry/stock-list-entry.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list'
+import { LoginService } from './login.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +34,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MatButtonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

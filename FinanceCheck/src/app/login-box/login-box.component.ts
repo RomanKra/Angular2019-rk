@@ -20,7 +20,7 @@ export class LoginBoxComponent implements OnInit {
         let answer = this.loginService.sendLogin(this.LoginData.username, this.LoginData.password)
         
         if (answer.success==true) {
-            this.router.navigate(['homepage', { username: this.LoginData.username }]);
+            this.router.navigate(['homepage']);
         } else {
             this.wrongPassword = true;
         }

@@ -14,6 +14,6 @@ export class StockListEntryComponent implements OnInit {
     ngOnInit() {
     }
     updateInfoView(){
-        this.componentUpdateService.updateListFn(this.data.name);
+        this.componentUpdateService.updateListFn(this.data["name"]);
     }
 }

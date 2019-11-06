@@ -1,5 +1,13 @@
-.stockinfo{
-    width:100%;
-    height:100%;
+.searchcontrols{
+    width:20%;
+    left: 40%;
+    position: relative;
+    height:40%;
     padding: 5%;
+}
+.detailscontainer{
+    width: 100%;
+    padding-left:10%;
+    padding-right: 10%;
+    height: 60%;
 }

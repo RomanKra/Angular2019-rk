@@ -1,1 +1,30 @@
-<p>stock-details works!</p>
+<table mat-table class="mat-elevation-z8 stockDetails">
+    <tr>
+        <th>
+            Company Name
+        </th>
+        <th>
+            Market Cap
+        </th>
+        <th>
+            50 Day Mv. Av.
+        </th>
+        <th>
+            # Of Employees
+        </th>
+    </tr>
+    <tr>
+        <td >
+            {{stockDetails.companyName}}
+        </td>
+        <td>
+            {{stockDetails.marketcap}}
+        </td>
+        <td>
+            {{stockDetails.day50MovingAvg}}
+        </td>
+        <td>
+            {{stockDetails.employees}}
+        </td>
+    </tr>
+</table>

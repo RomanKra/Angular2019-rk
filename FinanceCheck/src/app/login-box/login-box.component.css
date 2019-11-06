@@ -2,3 +2,10 @@
     color:red;
     font-style: italic;
 }
+
+.loginbox{
+    width:20%;
+    left: 40%;
+    height: 20%;
+    position: relative;
+}

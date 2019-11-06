@@ -3,3 +3,21 @@
     height:3%;
     background-color: blue;
 }
+
+.tablink{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.tablinkContainer{
+    font-size: 2vh;
+    text-align:center;
+    width:15%;
+    min-width: 15%;
+    cursor: pointer;
+    height: 100%;
+    float:left;
+}
+.tablinkContainer:hover{
+    background-color: rgb(59, 59, 255);
+}
