@@ -1,0 +1,20 @@
+<p>
+    <label for="username">Username:</label>
+</p>
+<p>
+    <input type="text" [(ngModel)]="LoginData.username">
+</p>
+<p>
+    <label for="password">Password:</label>
+</p>
+<p>
+    <input type="password" [(ngModel)]="LoginData.password">
+</p>
+<p>
+    <button mat-button type="button" color="primary" (click)="attemptLogin()">Login</button>
+</p>
+<p class = "errormessage">
+    <ng-template [ngIf]="wrongPassword == true"]>
+            The username and password you entered do not match up!
+    </ng-template>
+</p>

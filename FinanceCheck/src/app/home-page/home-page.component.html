@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<ul>
+    <!--
+    <li *ngFor="let stock of object.keys(savedStocks)">
+        {{stock}}
+    </li>
+    -->
+</ul>
+{{savedStocks}}
+<div class="savedListContainer">
+    <app-stock-list [savedStocks]="savedStocks"></app-stock-list>
+</div>
+<div class="stock-details">
+    <app-stock-details></app-stock-details>
+</div>
