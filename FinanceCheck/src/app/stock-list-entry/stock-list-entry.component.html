@@ -1,0 +1,19 @@
+<div class="stockListEntry">
+    <div class="nameField" (click)="updateInfoView()">
+        <h2>
+            {{data.name}}:
+        </h2>
+    </div>
+    <div class="infoField" (click)="updateInfoView()">
+        <table class="stockDataOverview">
+            <tr>
+                <th>Sector:</th>
+                <td>{{data.data[0].sector}}</td>
+            </tr>
+            <tr>
+                <th>Symbol:</th>
+                <td>{{data.data[0].symbol}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

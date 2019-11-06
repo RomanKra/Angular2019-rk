@@ -1,0 +1,15 @@
+.stockListEntry{
+    width:100%;
+    height:100px;
+    overflow: hidden;
+}
+
+.nameField {
+  width: 30%;
+  float: left;
+}
+
+.infoField {
+  width: 70%;
+  float: left;
+}

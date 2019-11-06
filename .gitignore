@@ -1,1 +1,5 @@
 .vscode/*
+FinanceCheck/.vsCode/*
+FinanceCheck/node_modules/*
+
+FinanceCheck/.vscode/launch.json
